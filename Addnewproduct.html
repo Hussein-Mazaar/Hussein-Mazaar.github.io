@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Product Form</title>
+	<link rel="stylesheet" href="./productform.css">
+</head>
+<body>
+	<form>
+		<label class="label">New Product Form</label>
+		<div class="container">
+			
+			<div>
+				
+				<label for="pnumber" class="label">Product Number</label>
+				<input type="text" id="pname" name="pname" class="input-field" required>
+				<label for="name" class="label">Name</label>
+				<input type="text" id="name" name="name" class="input-field" required>
+				<label for="unitprice" class="label">Unit Price</label>
+				<input type="text" id="unitprice" name="unitprice" value=0.0 class="input-field" required>
+			</div>
+			<div>
+				<label for="qstock" class="label">Quantity in Stock</label>
+				<input type="text" id="qstock" name="qstock" value=0 class="input-field">
+				<label for="supplier" class="label">Supplier</label>
+				<select id="suppliers" name="suppliers"  class="input-field">
+				  <option value="">Select a supplier</option>
+				  <option value="apple">Apple</option>
+				  <option value="amazon">Amazon</option>
+				  <option value="homedepot">Home Depot</option>
+				</select>
+
+				<label for="date" class="label">Date supplied</label>
+				<input type="date" id="date" name="date" class="input-field" required>
+			</div>
+		</div>
+		<input type="reset" value="Reset" class="submit-btn">
+		<input type="button" value="Cancel" class="submit-btn">
+		<input type="submit" value="Add Product" class="submit-btn">
+	</form>
+</body>
+</html>
