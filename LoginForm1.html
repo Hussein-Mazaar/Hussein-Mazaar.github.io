@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page: css form</title>
+    <link rel="stylesheet" href="./loginform.css">
+</head>
+<body>
+
+	<form>
+		<label for="username">Email address:</label>
+		<input type="text" id="username" name="username" value="Email address">
+        <label><p>We'll never share your email address with anyone else.</p></label><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" value="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" required><br><br>
+        <input type="checkbox" name="checkme" /> Check me out <br>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
+
